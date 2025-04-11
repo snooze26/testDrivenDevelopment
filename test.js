@@ -1,6 +1,6 @@
-//get the function 
+// retrieving the functions
 import { upperCase } from './upperCase.js';
-
+import { reverseReverse } from './reverseReverse.js';
 test('Capatlizes the string' , () => {
     expect(upperCase('abcdefg')).toBe('ABCDEFG');
 })
