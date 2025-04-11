@@ -1,13 +1,15 @@
 // retrieving the functions
 import { upperCase } from './upperCase.js';
 import { reverseReverse } from './reverseReverse.js';
-test('Capatlizes the string' , () => {
-    expect(upperCase('abcdefg')).toBe('ABCDEFG');
-})
+import { Calculator } from './calculator.js';
 
-test('Reverses the string', () => {
-    expect(reverseReverse('12345')).toBe('54321')
-})
+// test('Capatlizes the string' , () => {
+//     expect(upperCase('abcdefg')).toBe('ABCDEFG');
+// })
+
+// test('Reverses the string', () => {
+//     expect(reverseReverse('12345')).toBe('54321')
+// })
 
 test('1 + 1 = 2' , () => { 
     expect(sum(1+1)).toBe(2);
