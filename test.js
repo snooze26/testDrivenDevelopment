@@ -1,7 +1,7 @@
 // retrieving the functions
 import { upperCase } from './upperCase.js';
 import { reverseReverse } from './reverseReverse.js';
-import { Calculator } from './calculator.js';
+import { Calculator  } from './calculator.js';
 
 // test('Capatlizes the string' , () => {
 //     expect(upperCase('abcdefg')).toBe('ABCDEFG');
@@ -12,17 +12,17 @@ import { Calculator } from './calculator.js';
 // })
 
 test('1 + 1 = 2' , () => { 
-    expect(sum(1+1)).toBe(2);
+    expect(Calculator.add(1 , 1)).toBe(2);
 })
 
 test('2 -1 = 1' , () => { 
-    expect(sub(2-1)).toBe(1);
+    expect(Calculator.sub(2 , 1)).toBe(1);
 })
 
 test('2 * 5 = 10' , () => { 
-    expect(times(2*5)).toBe(10);
+    expect(Calculator.times(2 , 5)).toBe(10);
 })
 
 test('10 / 2 = 5' , () => { 
-    expect(times(10 / 2 )).toBe(5);
+    expect(Calculator.divide(10 , 2 )).toBe(5);
 })
