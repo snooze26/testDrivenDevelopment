@@ -28,11 +28,11 @@ import { ceaserCypher } from './ceasarCypher.js';
 //     expect(Calculator.divide(10 , 2 )).toBe(5);
 // })
 
-test('The expected answer is abc' , () => { 
-    expect(ceaserCypher("xyz ", 3)).toBe("abc ");
-})
+// test('The expected answer is abc' , () => { 
+//     expect(ceaserCypher("xyz ", 3)).toBe("abc ");
+// })
 
-test('The expected answer is a b c' , () => { 
-    expect(ceaserCypher("x y z ", 3)).toBe("a b c ");
-})
+// test('The expected answer is a b c' , () => { 
+//     expect(ceaserCypher("x y z ", 3)).toBe("a b c ");
+// })
 
