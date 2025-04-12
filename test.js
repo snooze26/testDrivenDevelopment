@@ -2,6 +2,7 @@
 import { upperCase } from './upperCase.js';
 import { reverseReverse } from './reverseReverse.js';
 import { Calculator  } from './calculator.js';
+import { ceaserCypher } from './ceasarCypher.js';
 
 // test('Capatlizes the string' , () => {
 //     expect(upperCase('abcdefg')).toBe('ABCDEFG');
@@ -28,6 +29,6 @@ import { Calculator  } from './calculator.js';
 // })
 
 test('The expected answer is abc' , () => { 
-    expect(Calculator.ceasarCypher("xyz", 3)).toBe("abc");
+    expect(ceaserCypher("xyz", 3)).toBe("abc");
 })
 

@@ -21,31 +21,19 @@ export function ceaserCypher(string, shiftNum) {
 
         // add shiftNum to the ASCII code and store as the cryptedChar . this is my shift and create the new character 
         let cryptedChar = shiftNum + asciiChar; 
-        console.log(cryptedChar);
     // IF the character is lowercase AND cryptedChar is beyond 'z' 
         if((cryptedChar > 122 && asciiChar >= 97 && asciiChar <= 122 ) ||
            (cryptedChar > 90 && asciiChar >= 65 && asciiChar <= 90)) {
                 //wrap it back by subtracting 26 from the cryptedChar
                 cryptedChar -= 26; 
-                console.log(cryptedChar); 
             }
-            res.push(String.fromCharCode(cryptedChar));
-        
-    // ELSE IF THE character is uppercase AND cryptedChar is beyond "Z"
-        //wrap it back by subtracting 26 from cryptedChar
 
-    // CONVERT the cryptedChar back to a character 
-   // Add it to the result array 
+        // CONVERT the cryptedChar back to a character and add it to the result array 
+        res.push(String.fromCharCode(cryptedChar));
     }
     //RETURN all characters in result merged as a string 
     return res.join("");
-
-    // end for loop
 }
-
-const testCode = ceaserCypher("XYZ", 3);
-console.log(testCode);
-
 
         
 
