@@ -14,7 +14,7 @@ export function ceaserCypher(string, shiftNum) {
         if(
             !(asciiChar >= 97 && asciiChar <= 122) && !(asciiChar >= 65 && asciiChar <= 90)) {
                 // add the character as-is to result this is so we don't manipulate values such as spaces, "!", "-", etc.
-                res.push(asciiChar);
+                res.push(String.fromCharCode(asciiChar))
                 // Contintue to the next character 
                 continue; 
             }
@@ -38,4 +38,5 @@ export function ceaserCypher(string, shiftNum) {
 // add a way turn the non aplhabetic characters back into their string formed. 
 
         
-
+const testString = ceaserCypher("x y z" , 3);
+console.log(testString);
