@@ -35,5 +35,7 @@ export function ceaserCypher(string, shiftNum) {
     return res.join("");
 }
 
+// add a way turn the non aplhabetic characters back into their string formed. 
+
         
 

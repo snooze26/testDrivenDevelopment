@@ -29,6 +29,6 @@ import { ceaserCypher } from './ceasarCypher.js';
 // })
 
 test('The expected answer is abc' , () => { 
-    expect(ceaserCypher("xyz", 3)).toBe("abc");
+    expect(ceaserCypher("xyz ", 3)).toBe("abc ");
 })
 
