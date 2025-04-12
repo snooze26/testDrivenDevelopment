@@ -6,18 +6,21 @@ export function ceaserCypher(string, shiftNum) {
     if(typeof shiftNum !== "number") return console.error("Need to enter a valid number for the shift");
     
 // create empty result array
-    let res = [] 
-// FOR each character in "string" get the ASCII code of that character 
-    for(let i = 0; i < string.length; i+= 1){
+    let res = [];
+// FOR each character in "string" get the ASCAII code of that character 
+    for(let i = 0; i < string.length; i+= 1) {
         const asciiChar = string.charCodeAt(i);
+        console.log("ASCII CHAR BEFORE IF STATEMENT0" , asciiChar)
         // IF the character is NOT a letter (not in a-z or A-Z)
         if(
             !(asciiChar >= 97 && asciiChar <= 122) || (asciiChar >= 65 && asciiChar <= 90)) {
-                console.log("if check is working");
-                console.log(asciiChar);
+                // add the character as-is to result this is so we don't manipulate values such as spaces, "!", "-", etc.
+                res.push(asciiChar);
+                // Contintue to the next character 
+                console.log(res);
+                continue; 
             }
-        // add the character as-is to result - WHY?  
-        // Contintue to the next character 
+        
 
     // add shiftNum to the ASCII code and store as the cryptedChar WHY?
 
@@ -37,7 +40,7 @@ export function ceaserCypher(string, shiftNum) {
     //RETURN all characters in result merged as a string 
 }
 
-const testCode = ceaserCypher("a", 5);
+const testCode = ceaserCypher("b", 5);
 console.log(testCode);
 
 
