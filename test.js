@@ -36,3 +36,25 @@ import { ceaserCypher } from './ceasarCypher.js';
 //     expect(ceaserCypher("x y z ", 3)).toBe("a b c ");
 // })
 
+
+
+test('Average value is 11' , () => { 
+    testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    expect(average("x y z ", 3)).toBe("a b c ");
+});
+
+test('Min value is 1' , () => { 
+    testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    expect(min("x y z ", 3)).toBe("a b c ");
+});
+
+test('Max value is 44' , () => { 
+    testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    expect(max("x y z ", 3)).toBe("a b c ");
+});
+
+test('Length is 6' , () => { 
+    testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    expect(size("x y z ", 3)).toBe("a b c ");
+});
+
