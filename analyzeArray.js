@@ -1,9 +1,10 @@
 
 export function analyzeArray(array) { 
     const min = Math.min(...array);
-    console.log(min)
+    const max = Math.max(...array);
 
-    return min; 
+    console.log(max);
+    return max
 }
 
 const testArray = [1 , 2 , 3 , 6 , 11, 44,]
