@@ -39,25 +39,31 @@ import { analyzeArray } from './analyzeArray.js';
 
 
 
-// test('Average value is 11' , () => { 
-//     const testArray = [1 , 2 , 3 , 6 , 11, 44,]
-//     expect(analyzeArray(testArray)).toBe("11");
-// });
+test('Average value is 11' , () => { 
+    const testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    const analyzedArray = analyzeArray(testArray);
 
-// test('Min value is 1' , () => { 
-//     const testArray = [1 , 2 , 3 , 6 , 11, 44,]
-//     expect(analyzeArray(testArray)).toBe(1);
-// });
+    expect(analyzedArray.average).toBe(11);
+});
 
-// test('Max value is 44' , () => { 
-//     const testArray = [1 , 2 , 3 , 6 , 11, 44,]
-//     expect(analyzeArray(testArray)).toBe(44);
-// });
+test('Min value is 1' , () => { 
+    const testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    const analyzedArray = analyzeArray(testArray);
+
+    expect(analyzedArray.min).toBe(1);
+});
+
+test('Max value is 44' , () => { 
+    const testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    const analyzedArray = analyzeArray(testArray);
+
+    expect(analyzedArray.max).toBe(44);
+});
 
 test('Length is 6' , () => { 
     const testArray = [1 , 2 , 3 , 6 , 11, 44,]
     const analyzedArray = analyzeArray(testArray);
-    // const average = testArray.average
-    expect(analyzedArray.average).toBe(11);
+
+    expect(analyzedArray.length).toBe(6);
 });
 
