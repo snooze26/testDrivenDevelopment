@@ -2,9 +2,9 @@
 export function analyzeArray(array) { 
     const min = Math.min(...array);
     const max = Math.max(...array);
+    const length = array.length;
 
-    console.log(max);
-    return max
+    return length;
 }
 
 const testArray = [1 , 2 , 3 , 6 , 11, 44,]

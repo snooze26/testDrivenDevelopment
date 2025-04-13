@@ -49,13 +49,13 @@ import { analyzeArray } from './analyzeArray.js';
 //     expect(analyzeArray(testArray)).toBe(1);
 // });
 
-test('Max value is 44' , () => { 
-    const testArray = [1 , 2 , 3 , 6 , 11, 44,]
-    expect(analyzeArray(testArray)).toBe(44);
-});
-
-// test('Length is 6' , () => { 
+// test('Max value is 44' , () => { 
 //     const testArray = [1 , 2 , 3 , 6 , 11, 44,]
-//     expect(analyzeArray(testArray)).toBe("11");
+//     expect(analyzeArray(testArray)).toBe(44);
 // });
+
+test('Length is 6' , () => { 
+    const testArray = [1 , 2 , 3 , 6 , 11, 44,]
+    expect(analyzeArray(testArray)).toBe(6);
+});
 
