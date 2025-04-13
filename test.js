@@ -56,6 +56,8 @@ import { analyzeArray } from './analyzeArray.js';
 
 test('Length is 6' , () => { 
     const testArray = [1 , 2 , 3 , 6 , 11, 44,]
-    expect(analyzeArray(testArray)).toBe(6);
+    const analyzedArray = analyzeArray(testArray);
+    // const average = testArray.average
+    expect(analyzedArray.average).toBe(11);
 });
 
