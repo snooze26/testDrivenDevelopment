@@ -1,5 +1,11 @@
-//create object
 
 export function analyzeArray(array) { 
-    // for the average round it up
+    const min = Math.min(...array);
+    console.log(min)
+
+    return min; 
 }
+
+const testArray = [1 , 2 , 3 , 6 , 11, 44,]
+const min = analyzeArray(testArray);
+// console.log(min)
